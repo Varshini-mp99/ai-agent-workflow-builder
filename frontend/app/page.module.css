@@ -1,0 +1,541 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  background: #111827;
+  color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 4px 10px 30px;
+}
+
+.brandIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.brand strong,
+.brand span {
+  display: block;
+}
+
+.brand strong {
+  font-size: 15px;
+}
+
+.brand span {
+  color: #9ca3af;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.navItem {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  padding: 12px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background: #1f2937;
+  color: white;
+}
+
+.navActive {
+  background: #312e81;
+  color: white;
+}
+
+.sidebarBottom {
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 18px 8px 4px;
+  border-top: 1px solid #293244;
+}
+
+.user strong,
+.user span {
+  display: block;
+}
+
+.user strong {
+  font-size: 13px;
+}
+
+.user span {
+  color: #9ca3af;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* MAIN */
+
+.main {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  padding: 42px 48px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.overline {
+  color: #6366f1;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 0 0 8px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+
+.primaryButton {
+  border: none;
+  background: #4f46e5;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background: #4338ca;
+}
+
+.secondaryButton {
+  border: 1px solid #d9deea;
+  background: white;
+  color: #374151;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  background: #f8fafc;
+}
+
+/* STATS */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.statCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 13px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.statHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.statIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statCard strong {
+  display: block;
+  margin-top: 14px;
+  font-size: 27px;
+}
+
+.statCard small {
+  display: block;
+  color: #16a34a;
+  margin-top: 7px;
+  font-size: 11px;
+}
+
+/* SECTIONS */
+
+.section {
+  margin-top: 42px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.sectionHeader p {
+  color: #6b7280;
+  margin: 5px 0 0;
+  font-size: 13px;
+}
+
+/* WORKFLOW */
+
+.workflowGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.workflowCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 13px;
+  padding: 22px;
+  transition: 0.2s;
+}
+
+.workflowCard:hover {
+  border-color: #a5b4fc;
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.08);
+  transform: translateY(-2px);
+}
+
+.workflowTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workflowIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #eef2ff;
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.activeBadge,
+.draftBadge {
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.activeBadge {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.draftBadge {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.workflowCard h3 {
+  margin: 20px 0 7px;
+  font-size: 17px;
+}
+
+.workflowCard p {
+  color: #6b7280;
+  line-height: 1.6;
+  min-height: 48px;
+  font-size: 13px;
+}
+
+.workflowInfo {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #edf0f4;
+  margin-top: 18px;
+  padding-top: 14px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.openButton {
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 8px;
+  color: #374151;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.openButton:hover {
+  background: #f9fafb;
+}
+
+/* ACTIVITY */
+
+.activityCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 17px 20px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.activity:last-child {
+  border-bottom: none;
+}
+
+.activityDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.activityInfo {
+  flex: 1;
+}
+
+.activityInfo strong,
+.activityInfo span {
+  display: block;
+}
+
+.activityInfo strong {
+  font-size: 13px;
+}
+
+.activityInfo span {
+  color: #6b7280;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.activity time {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+/* MODAL */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: rgba(15, 23, 42, 0.58);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-sizing: border-box;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modalHeader h2 {
+  margin: 0;
+}
+
+.modalHeader p {
+  color: #6b7280;
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+.close {
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.modal label {
+  display: block;
+  margin: 20px 0 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d9deea;
+  border-radius: 8px;
+  padding: 11px 12px;
+  font: inherit;
+  outline: none;
+}
+
+.modal input:focus,
+.modal textarea:focus {
+  border-color: #6366f1;
+}
+
+.modal textarea {
+  resize: vertical;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.cancelButton {
+  border: 1px solid #d9deea;
+  background: white;
+  padding: 11px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .workflowGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 70px;
+  }
+
+  .brand div:last-child,
+  .navItem {
+    font-size: 0;
+  }
+
+  .navItem span:first-child {
+    font-size: 16px;
+  }
+
+  .main {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+    padding: 25px;
+  }
+
+  .workflowGrid {
+    grid-template-columns: 1fr;
+  }
+}
